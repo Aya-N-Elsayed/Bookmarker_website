@@ -7,7 +7,20 @@ var websiteURLInput = document.getElementById("siteURL");
 
 //? Add
 
-var websiteArr = []
+// check if local storage has data
+var storedData = JSON.parse(localStorage.getItem("websiteArr"));
+if (storedData=='') {
+    var websiteArr = [];
+}
+
+else{
+ 
+    var websiteArr = storedData;
+    display();
+}
+
+
+// var websiteArr = []
 
 
 function add(){
