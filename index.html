@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv='X-UA-Compatible' content='IE=edge'> -->
+    <title>Bookmarker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- -------------------------------favicon------------------------------- -->
+    <!-- <link href="./images/favicon.ico" rel="icon" type="image/png"> -->
+    <!-- -------------------------------Linking fonts--------------------------------------- -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <!--------------------------------- Linking ---------------------------->
+    <!-- linking bootstrap style sheet -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- linking awsome font style sheets -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- linking media query style sheet -->
+    <link rel="stylesheet" href="./css/mediaQuary.css" />
+    <!-- linking main css style sheet -->
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+    
+        <!-- todo header section  -->
+
+        <header class="home container " id="home">
+            <div class="homeContent">
+
+                <h1 class="title  text-center">
+                    Bookmarker
+                </h1>
+
+                
+
+
+
+                
+
+            <form class="siteForm">
+                <div class="formTitle text-center">
+                    <h2>
+                        <i class="fa-solid fa-bookmark" style="color: #379136;"></i>
+                        Bookmark your favorite sites
+                        <i class="fa-solid fa-bookmark" style="color: #379136;"></i>
+                    </h2>
+                </div>
+                <div class="mb-3">
+                    <label for="siteName" class="form-label"><i class="fa-solid fa-book-bookmark" style="color: #0c0d0d;"></i> Site Name</label>
+                    <input type="text" class="form-control" id="siteName" placeholder="Bookmark Name">
+                </div>
+                <div class="mb-3">
+                    <label for="URL" class="form-label"><i class="fa-solid fa-link" style="color: #161717;"></i> Site URL</label>
+                    <input type="text" class="form-control" id="siteURL" placeholder="Website URL">
+                    
+                </div>
+                <div class="button text-center">
+                <button type="button" class="btn btnSubmit " id="submitBtn" onclick="add()">Supmit</button>
+                </div>
+
+            </form>
+
+            </div>
+
+            <table class="table mt-4">
+                <thead>
+                    <tr>
+                        <th scope="col">Index</th>
+                        <th scope="col">Website</th>
+                        <th scope="col"> Visit</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+
+                </tbody>
+            </table>
+
+        </header>
+
+            
+
+
+
+
+    <!-- linking java script files -->
+    <script src="./javascript/bootstrap.bundle.min.js"></script>
+    <script src="./javascript/main.js"></script>
+
+</body>
+</html>

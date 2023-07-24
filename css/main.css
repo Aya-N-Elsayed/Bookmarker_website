@@ -1,0 +1,78 @@
+/* home section styling */
+
+.btnSubmit{
+    padding: 6px 50px ;
+    background-color: #d1512d;
+    border-color: #d1512d;
+    color: white;
+}
+
+.btnSubmit:hover{
+        background-color: #cf3308;
+        color: white;
+
+}
+
+body{
+    /* background-color: #fec260; */
+    background-color: #f7ecde;
+    color: #352e28;
+}
+
+header{
+    height: 100vh;
+}
+
+h1{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    color: rgb(19, 18, 18);
+    margin-block: 50px;
+    padding-bottom: 50px;
+    border-bottom: #3f3934 dashed 1px;
+    position: relative;
+    
+
+}
+
+h1::after{
+    content: " ";
+    width: 23%;
+    height: 20%;
+    background-color: rgb(244, 171, 110);
+    position: absolute;
+    bottom: 50px;
+    left: 430px;
+    z-index: -1;
+    transition: height 300ms;
+
+}
+
+h1:hover::after {
+    height: 30% ;
+}
+
+
+h2 {
+    margin-block: 30px;
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    color: #3ca55c;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+    .form-control:focus {
+        border-color:rgb(241, 124, 21);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(255, 190, 100, 0.5);
+    }
+
+    .siteForm{
+        padding-bottom: 30px;
+        border-bottom: #3f3934 dashed 1px;
+    }
