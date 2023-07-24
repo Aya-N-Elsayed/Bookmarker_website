@@ -25,6 +25,7 @@ function add(){
     console.log(websiteArr);
     display();
     clear();
+    saveToLocal();
 
 
 }
@@ -79,4 +80,8 @@ function validate_URL(url_){
 
     return(urlRegex.test(url_));
 
+}
+
+function saveToLocal(){
+    localStorage.setItem("websiteArr",JSON.stringify(websiteArr));
 }
