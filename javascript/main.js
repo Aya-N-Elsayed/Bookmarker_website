@@ -9,7 +9,7 @@ var websiteURLInput = document.getElementById("siteURL");
 
 // check if local storage has data
 var storedData = JSON.parse(localStorage.getItem("websiteArr"));
-if (storedData=='') {
+if (storedData==null) {
     var websiteArr = [];
 }
 
